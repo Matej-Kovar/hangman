@@ -1,0 +1,51 @@
+.default {
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--empty);
+    color: var(--background);
+    width: 2em;
+    height: 2em;
+}
+
+.empty {
+
+}
+
+@keyframes currentFlash {
+    40% {background-color: var(--current);}
+    60% {background-color: var(--current);}
+    100% {background-color: var(--empty);}
+}
+
+.current {
+    animation-name: currentFlash;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.wrong{
+    background-color: var(--wrong);
+}
+
+.correct {
+    background-color: var(--correct);
+}
+
+.miss {
+    background-color: var(--miss);
+}
+
+@keyframes invalidFlash {
+    50% {background-color: var(--invalid);}
+    100% {background-color: var(--empty);}
+}
+
+.invalid{
+    animation-name: invalidFlash;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+}

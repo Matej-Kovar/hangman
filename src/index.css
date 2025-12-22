@@ -1,0 +1,13 @@
+:root {
+    --background: #FCFCFC;
+    --correct: #06D6A0;
+    --current: #26547C;
+    --invalid: #EF476F;
+    --miss: #FFD166;
+    --empty: #849EB4;
+    --wrong: #41698C;
+}
+
+body {
+    background-color: var(--background);
+}
